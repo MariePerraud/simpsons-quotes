@@ -1,38 +1,71 @@
-.App {
+@font-face {
+  font-family: "SimpsonFont";
+  src: url(../assets/Simpsonfont.ttf) format("truetype");
+}
+
+body {
+  margin: 0;
   text-align: center;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  font-size: 62.5%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.background {
+  background-image: url(../assets/donuts.jpg);
+  background-size: contain;
+  opacity: 0.3;
+  min-width: 100vw;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  z-index: -1;
+  position: absolute;
 }
 
-.App-link {
-  color: #61dafb;
+.container{
+  height: 100vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1 {
+  font-family: "SimpsonFont", sans-serif;
+  color: yellow;
+  text-shadow: 0.25rem 0.25rem 1rem grey;
+  font-size: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  padding-top: 2rem;
+  cursor: default;
+}
+
+img {
+  height: 50%;
+}
+
+.quote {
+  font-size: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  font-style: italic;
+  cursor: default;
+}
+
+.font {
+  font-family: "SimpsonFont", sans-serif;
+  font-size: 2rem;
+  text-shadow: 0.25rem 0.25rem 1rem grey;
+  cursor: default;
+}
+
+button {
+  background-color: yellow;
+  border: none;
+  border-radius: 1.25rem;
+  box-shadow: 0.25rem 0.25rem 1rem grey;
+  padding: 2vh 2vw;
+  font-weight: bold;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-top: 2rem;
 }
